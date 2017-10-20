@@ -1,11 +1,59 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>mengpay</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript">
+    var UA = window.navigator.userAgent;
+    var isAndroid = UA.indexOf('Android') > -1 || u.indexOf('Adr') > -1;
+    var isiOS = !!UA.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+    window.MengJsBridge = {
+      doCall: function (functionName, data, callback) {
+        var _this = this;
+        // 解决连续调用问题
+        if (this.lastCallTime && (Date.now() - this.lastCallTime) < 100) {
+          setTimeout(function () {
+            _this.doCall(functionName, data, callback);
+          }, 100);
+          return;
+        }
+        this.lastCallTime = Date.now();
+
+        data = data || {};
+        if (callback) {
+          data = Object.assign(data, {callback: callback});
+        }
+
+        if (isiOS) {
+          $.each(data, function (key, value) {
+            if ($.isPlainObject(value) || $.isArray(value)) {
+              data[key] = JSON.stringify(value);
+            }
+          });
+          var url = Args.addParameter('mengjs://' + functionName, data);
+          var iframe = document.createElement('iframe');
+          iframe.style.width = '1px';
+          iframe.style.height = '1px';
+          iframe.style.display = 'none';
+          iframe.src = url;
+          document.body.appendChild(iframe);
+          setTimeout(function () {
+            iframe.remove();
+          }, 100);
+        } else if (isAndroid) {
+          window.androidJS && window.androidJS[functionName] && window.androidJS[functionName](JSON.stringify(data));
+        } else {
+          console.error('未获取platform信息，调取api失败');
+        }
+      }
+    }
+    MengJsBridge.doCall('aaa',{aa:'11'},function () {
+        alert(1)
+    });
+  </script>
+  <title>mengpay</title>
+</head>
+<body>
+<div id="app"></div>
+<!-- built files will be auto injected -->
+</body>
 </html>
