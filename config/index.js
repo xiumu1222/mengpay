@@ -32,9 +32,9 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      "/somedo": {
+      "/mzfappservice": {
         // target: "http://10.85.1.196:9090/huafeibao",
-        target: "https://huafeibaotest.alipay-eco.com/huafeibao",
+        target: "http://192.168.1.9:8080",
         changeOrigin: true
       }
     },

@@ -1,7 +1,7 @@
 <template>
   <div class="search-title-layout" v-bind:style="{'padding-top': pt+'rem','padding-bottom': pb+'rem'}">
     <div class="search-title-box">
-      <input class="search-input" placeholder="违章缴费">
+      <input class="search-input" v-on:input="selfProps.searchHandle" v-model="selfProps.searchAppName" maxlength="10">
       <div class="scan"></div>
     </div>
   </div>
@@ -15,6 +15,15 @@
       },
       pb: {
         default: 0
+      },
+      selfProps: {
+        default: function () {
+          return {
+            searchAppName: '',
+            searchHandle(){
+            }
+          }
+        }
       }
     },
     mounted() {
@@ -28,6 +37,8 @@
   }
 </script>
 <style scoped lang="less" rel="stylesheet/less">
+  @import "../common.less";
+
   .search-title-layout {
     .search-title-box {
       background: #ffa800;
@@ -43,10 +54,9 @@
         margin-right: 0.42rem;
         background-image: url("../../assets/icon_search.png");
         background-repeat: no-repeat;
-        background-position: 0.17rem center ;
+        background-position: 0.17rem center;
         background-size: 0.4rem;
         padding-left: 0.7rem;
-        color: #ffffff;
         font-size: 0.3rem;
       }
       .scan {
@@ -58,9 +68,6 @@
         position: relative;
         top: 0.08rem
       }
-
     }
   }
-
-
 </style>

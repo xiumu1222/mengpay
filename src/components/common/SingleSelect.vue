@@ -42,8 +42,9 @@
     mounted() {
       const _this = this;
       _this.selectedName = _this.selfProps.selectList[0].name || '请选择';
-      document.addEventListener('click', (e) => {
-          _this.selectListIsShow = false;
+      _this.selfProps.selectedData = _this.selfProps.selectList[0]
+      document.addEventListener('click', function (e) {
+        _this.selectListIsShow = false;
       })
     },
     data () {

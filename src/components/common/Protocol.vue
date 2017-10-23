@@ -35,9 +35,10 @@
 <style scoped lang="less" rel="stylesheet/less">
   @import "../common.less";
   .protocol-layout {
-    padding-left: 0.28rem;
     .protocol-box {
+      width: 6.95rem;
       font-size: 0.28rem;
+      margin: 0 auto;
       .flex-block-row-start;
       .agree-radio {
         width: 0.28rem;
@@ -58,8 +59,8 @@
           border-bottom: solid 2px #ffffff;
           transform: rotate(45deg);
           position: absolute;
-          left: 0.09rem;
-          top: 0.05rem;
+          left: 0.08rem;
+          top: 0.04rem;
         }
       }
       .agree-link {

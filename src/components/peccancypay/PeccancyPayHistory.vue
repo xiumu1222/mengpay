@@ -71,7 +71,7 @@
   }
 </script>
 <style scoped lang="less" rel="stylesheet/less">
-  @import "./common.less";
+  @import "../common.less";
 
   .peccancy-payhistory-layout {
     .peccancy-payhistory-box {

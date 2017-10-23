@@ -3,7 +3,7 @@
     <div class="app-list-box">
       <div class="app-item" v-for="(data,index) in selfProps.applist">
         <div class="app-img">
-          <img src="../../assets/function_01.png">
+          <img v-bind:src="data.imgurl">
         </div>
         <div class="app-link">
           <router-link to="/">{{data.appname}}</router-link>
@@ -160,6 +160,10 @@
         width: 25%;
         padding: 0.34rem 0;
         .app-img {
+          img {
+            width: 0.58rem;
+            height: 0.58rem;
+          }
         }
       }
     }

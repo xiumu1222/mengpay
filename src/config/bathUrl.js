@@ -6,6 +6,6 @@ const pathname = window.location.pathname;
 const locationUrl = `${protocol}//${host}${pathname}`;
 
 export default {
-  bathUrl: '/',
+  bathUrl: 'mzfappservice/',
   locationUrl: locationUrl
 }

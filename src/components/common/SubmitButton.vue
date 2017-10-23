@@ -1,6 +1,6 @@
 <template>
   <div class="submit-button-layout" v-bind:style="{'padding-top': pt+'rem','padding-bottom': pb+'rem'}">
-    <div class="submit-button-box">{{selfProps.name}}</div>
+    <div class="submit-button-box" v-on:click="selfProps.submitCallback">{{selfProps.btnName}}</div>
   </div>
 </template>
 <script>
@@ -16,7 +16,9 @@
       selfProps: {
         default: function () {
           return {
-            name: '按钮'
+            btnName: '按钮',
+            submitCallback(){
+            }
           }
         }
       }
@@ -33,6 +35,7 @@
 </script>
 <style scoped lang="less" rel="stylesheet/less">
   @import "../common.less";
+
   .submit-button-layout {
     .submit-button-box {
       width: 6.95rem;
@@ -44,7 +47,7 @@
       margin: 0 auto;
       background: @f5;
       color: #ffffff;
-      letter-spacing: 10px;
+      letter-spacing: 5px;
     }
 
   }

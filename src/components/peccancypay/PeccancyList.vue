@@ -33,14 +33,14 @@
   </div>
 </template>
 <script>
-  import SubmitButton from './common/SubmitButton.vue';
-  import Protocol from './common/Protocol.vue';
+  import SubmitButton from '../common/SubmitButton.vue';
+  import Protocol from '../common/Protocol.vue';
   const components = {
     SubmitButton,
     Protocol
   };
   const btnProps = {
-    name: '缴费'
+    btnName: '缴费'
   };
   export default {
     name: 'PeccancyList',
@@ -65,7 +65,7 @@
   }
 </script>
 <style scoped lang="less" rel="stylesheet/less">
-  @import "./common.less";
+  @import "../common.less";
   .peccancy-list-layout {
     .peccancy-list-box {
       .item-list-box {
