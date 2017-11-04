@@ -1,0 +1,96 @@
+.item-list-box {
+  padding-left: 0.27rem;
+  background: #ffffff;
+  .item-list-title {
+    font-size: 0.26rem;
+    color: #999999;;
+    padding: 0.17rem 0rem;
+    border-bottom: solid 1px  #f1f1f1;
+  }
+
+  .item {
+    font-size: 0.3rem;
+    padding: 0.3rem 0rem;
+    border-bottom: solid 1px #f1f1f1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    .item-left {
+      .iconfont.icon-radio-yes {
+        font-size: 0.30rem;
+        color: #ffa800;
+        margin-right: 0.05rem;
+      }
+      .iconfont.icon-radio-no {
+        font-size: 0.30rem;
+        color: #cacaca;
+        margin-right: 0.05rem;
+      }
+      .cell-1 {
+        font-size: 0.3rem;
+      }
+      .cell-2 {
+        font-size: 0.24rem;
+        color: #999999;
+        margin-top: 0.1rem;
+      }
+      .cell-3 {
+        font-size: 0.24rem;
+        color: #999999;
+        margin-top: 0.1rem;
+      }
+    }
+    .item-right {
+      padding-right: 0.3rem;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      .iconfont {
+        font-size: 0.4rem;
+      }
+      .item-input {
+        border-style: none;
+        text-align: right;
+      }
+    }
+    .item-right-icon{
+      position: relative;
+      display: inline-block;
+      width:0.3rem;
+      height:0.34rem;
+      &:before{
+        content: ' ';
+        display: block;
+        width:0.24rem;
+        height:0.34rem;
+        position: absolute;
+        right:0;
+        background-image: url("../images/icon_right.png");
+        background-size: 0.24rem 0.34rem;
+        background-repeat: no-repeat;
+      }
+    }
+    .item-right-icon-add{
+      position: relative;
+      display: inline-block;
+      width:0.3rem;
+      height:0.23rem;
+      &:before{
+        content: ' ';
+        display: block;
+        width:0.23rem;
+        height:0.23rem;
+        position: absolute;
+        right:0;
+        background-image: url("../images/icon-add.png");
+        background-size: 0.23rem 0.23rem;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
+

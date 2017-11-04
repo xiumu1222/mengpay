@@ -1,0 +1,169 @@
+html {
+    font-size: 38px;
+}
+
+@media only screen and (min-width: 320px) {
+    html {
+        font-size: 42.666px !important;
+    }
+}
+
+@media only screen and (min-width: 360px) {
+    html {
+        font-size: 48px !important;
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    html {
+        font-size: 50px !important;
+    }
+}
+
+@media only screen and (min-width: 414px) {
+    html {
+        font-size: 55.2px !important;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    html {
+        font-size: 64px !important;
+    }
+}
+
+@media only screen and (min-width: 560px) {
+    html {
+        font-size: 74.666px !important;
+    }
+}
+
+@media only screen and (min-width: 640px) {
+    html {
+        font-size: 85.333px !important;
+    }
+}
+
+@media only screen and (min-width: 720px) {
+    html {
+        font-size: 96px !important;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    html {
+        font-size: 100px !important;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    html {
+        font-size: 106.666px !important;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    html {
+        font-size: 128px !important;
+    }
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+th,
+td,
+p,
+blockquote,
+pre,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+hr {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-touch-callout: none; /*系统默认菜单被禁用*/
+    -webkit-user-select: none; /*webkit浏览器*/
+    -khtml-user-select: none; /*早期浏览器*/
+    -moz-user-select: none; /*火狐*/
+    -ms-user-select: none; /*IE10*/
+    user-select: none;
+}
+
+input {
+    outline: none;
+    /*color: #035ba0;*/
+    font-size: 0.34rem;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: auto; /*webkit浏览器*/
+}
+
+/*input::-moz-placeholder {*/
+/*color: #ffffff;*/
+/*}*/
+
+/*input::-webkit-input-placeholder {*/
+/*color: #ffffff;*/
+/*}*/
+
+/*input:-ms-input-placeholder {*/
+/*color: #ffffff;*/
+/*}*/
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    color: #151515;
+    background: #f5f5f9;
+    font-family: sans-serif-light, Roboto, STHeiTiSC, STHeiTi, Helvetica Neue, Helvetica, sans-serif;
+}
+
+li {
+    list-style: none
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset,
+img {
+    border: 0
+}
+a {
+    text-decoration:none;
+    out-line: none;
+    color: #000000;
+}
+
+.clear {
+    clear: both;
+}
+
+#app {
+    font-size: 0.24rem;
+}
+body{
+    background-color: #f1f1f1;
+}

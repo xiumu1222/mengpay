@@ -1,0 +1,81 @@
+.submit-button-layout {
+  margin-top: 0.34rem;
+  .submit-button-box {
+    width: 6.95rem;
+    height: 0.88rem;
+    line-height: 0.88rem;
+    text-align: center;
+    font-size: 0.38rem;
+    border-radius: 0.08rem;
+    margin: 0 auto;
+    background: #ffa800;;
+    color: #ffffff;
+    letter-spacing: 5px;
+  }
+}
+
+.protocol-layout {
+  margin-top: 0.3rem;
+  .protocol-box {
+    width: 6.95rem;
+    font-size: 0.28rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    .agree-radio {
+      width: 0.28rem;
+      height: 0.28rem;
+      border-radius: 0.28rem;
+      position: relative;
+      background: #dedede;
+      margin-right: 0.1rem;
+      &.on {
+        background: #ffa800;;
+      }
+      &:after {
+        content: '';
+        display: block;
+        width: 0.09rem;
+        height: 0.14rem;
+        border-right: solid 2px #ffffff;
+        border-bottom: solid 2px #ffffff;
+        transform: rotate(45deg);
+        position: absolute;
+        left: 0.08rem;
+        top: 0.04rem;
+      }
+    }
+    .agree-link {
+      color: #ffa800;;
+    }
+  }
+}
+
+.peccancy-detail-layout {
+  .peccancy-detail-box {
+    background: #ffffff;
+    margin-top: 0.2rem;
+    padding: 0.27rem;
+    .item {
+      font-size: 0.34rem;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      align-items: flex-start;
+      padding: 0.2rem 0;
+      .cell-1 {
+        color: #151515;;
+        min-width: 1.2rem;
+      }
+      .cell-2 {
+        color: #999999;;
+      }
+    }
+
+  }
+}

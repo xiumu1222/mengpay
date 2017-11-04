@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <title>我的</title>
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div id="main" class="main">
+        <div class="item-list-box my"  onclick="callAndroidLink('/dist/my/perinfo.html')">
+            <div class="item">
+                <img src="./images/img_Avatar.png" alt="my">
+                <div class="item-left"><div class="username">mv5858585858-1</div><div style="height: 0.2rem;"></div><div class="userlevel">普通用户</div></div>
+                <div class="item-right"></div>
+            </div>
+        </div>
+        <div class="item-list-box" onclick="callAndroidLink('/dist/my/bill.html')">
+            <div class="item">
+                <img class="item-img" src="./images/icon_bill.png" alt="bill">
+                <div class="item-left">账单</div>
+                <div class="item-right"></div>
+            </div>
+        </div>
+        <div class="item-list-box" onclick="callAndroidLink('/dist/my/setting.html')" style="margin-bottom: 0.2rem">
+            <div class="item">
+                <img class="item-img" src="./images/icon_set.png" alt="set">
+                <div class="item-left">设置</div>
+                <div class="item-right"></div>
+            </div>
+        </div>
+
+        <div class="item-list-box" onclick="callAndroidLink('/dist/my/SearchSchool.html')">
+            <div class="item">
+                <img class="item-img" src="./images/icon_help.png" alt="help">
+                <div class="item-left">帮助中心</div>
+                <div class="item-right"></div>
+            </div>
+        </div>
+        <div class="item-list-box" onclick="callAndroidLink('/dist/my/SearchSchool.html')">
+            <div class="item">
+                <img class="item-img" src="./images/icon_service.png" alt="service">
+                <div class="item-left">在线客服</div>
+                <div class="item-right"></div>
+            </div>
+        </div>
+        <div class="item-list-box" onclick="callAndroidLink('/dist/my/about.html')">
+            <div class="item">
+                <img class="item-img" src="./images/icon_about.png" alt="about">
+                <div class="item-left">关于</div>
+                <div class="item-right"></div>
+            </div>
+        </div>
+    </div>
+    <div id="toolnav" class="toolnav-layout">
+        <ul class="toolnav-box">
+            <li class="toolnav-item"><a href="/dist/index/index.html" class="item-link"><img src="./images/tab_home.png" alt="home"><span>首页</span></a></li>
+            <li class="toolnav-item"><span class="item-link"><img src="./images/tab_local.png" alt="home"><span>本地</span></span></li>
+            <li class="toolnav-item"><span class="item-link"><img src="./images/tab_m_touch.png" alt="home"><span  class="active">个人</span></span></li>
+        </ul>
+    </div>
+</body>
+<script src="../zepto.min.js"></script>
+<script src="./js/index.js"></script>
+</html>
