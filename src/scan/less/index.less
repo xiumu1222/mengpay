@@ -44,22 +44,6 @@
   padding-left: 0.28rem;
 }
 
-
-.submit-button-layout {
-  margin-top: 0.34rem;
-  .submit-button-box {
-    width: 6.95rem;
-    height: 0.88rem;
-    line-height: 0.88rem;
-    text-align: center;
-    font-size: 0.38rem;
-    border-radius: 0.08rem;
-    margin: 0 auto;
-    background: #FFA800;
-    color: #ffffff;
-    letter-spacing: 5px;
-  }
-}
 .item-list-box {
   padding-left: 0.27rem;
   background: #ffffff;
@@ -68,6 +52,33 @@
     color: #999999;;
     padding: 0.17rem 0rem;
     border-bottom: solid 1px  #f1f1f1;
+  }
+  label {
+    &.on {
+      .radio {
+        &:after {
+          content: '';
+          display: inline-block;
+          width:0.32rem;
+          height:0.32rem;
+          background: url(../images/icon_on.png) no-repeat;
+          background-size: contain;
+        }
+      }
+    }
+    .radio {
+      input[type='radio'] {
+        display: none;
+      }
+      &:after {
+        content: '';
+        display: inline-block;
+        width:0.32rem;
+        height:0.32rem;
+        background: url(../images/icon_un.png) no-repeat;
+        background-size: contain;
+      }
+    }
   }
   .item {
     height:0.98rem;
@@ -101,11 +112,14 @@
       .item-input {
         border-style: none;
         text-align: right;
+        color: #cacaca;
+        color: initial;
       }
       img{
         width:0.32rem;
         height:0.32rem;
       }
+
     }
   }
 }

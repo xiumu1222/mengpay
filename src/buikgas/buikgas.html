@@ -12,40 +12,52 @@
     <link rel="stylesheet" href="./css/buikgas.css">
 </head>
 <body>
-    <div id="main">
-        <div class="express-title">中石油第一加油站</div>
-        <div class="item-list-box">
-            <div class="item">
-                <div class="item-left">金额</div>
-                <div class="item-right"><input class="item-input" type="text" placeholder="请输入单号"></div>
-            </div>
-    	</div>
-        <div class="item-list-box">
-            <div class="item">
-                <div class="item-left">姓名</div>
-                <div class="item-right"><input class="item-input" type="text" placeholder="请输入姓名"></div>
-            </div>
-    	</div>
-        <div class="item-list-box">
-            <div class="item">
-                <div class="item-left">身份证号码</div>
-                <div class="item-right"><input class="item-input" type="text" placeholder="请输入身份证号码"></div>
-            </div>
-    	</div>
-    </div>
-    <div class="protocol-layout">
-        <div class="protocol-box">
-            <div class="agree-radio on"></div>
-            <div>
-                同意
-            </div>
-            <div class="agree-link">
-                《孟之付自助缴费服务协议》
-            </div>
+<div id="main">
+    <div class="express-title" id="gasstationname">中石油第一加油站</div>
+    <div class="item-list-box">
+        <div class="item">
+            <div class="item-left">金额</div>
+            <div class="item-right"><input class="item-input" id="money" type="tel" placeholder="请输入金额"></div>
         </div>
     </div>
-    <div class="submit-button-layout">
-    	<div class="submit-button-box" onclick="alert('支付成功,我该去哪')">去支付</div>
-	</div>
+    <div class="item-list-box">
+        <div class="item">
+            <div class="item-left">姓名</div>
+            <div class="item-right"><input class="item-input" id="yourname" type="text" placeholder="请输入姓名"></div>
+        </div>
+    </div>
+    <div class="item-list-box">
+        <div class="item">
+            <div class="item-left">身份证号码</div>
+            <div class="item-right"><input class="item-input" id='card_no' type="text" placeholder="请输入身份证号码"></div>
+        </div>
+    </div>
+</div>
+<div class="protocol-layout">
+    <div class="protocol-box">
+        <div class="agree-radio on"></div>
+        <div>
+            同意
+        </div>
+        <div class="agree-link">
+            《孟之付自助缴费服务协议》
+        </div>
+    </div>
+</div>
+<div class="submit-button-layout">
+    <div class="submit-button-box">去支付</div>
+</div>
+
+<form action="" method="post" id="form1" name="form1">
+    <input type="hidden" id="subject" name="subject" value=""/>
+    <input type="hidden" id="totalAmount" name="totalAmount" value=""/>
+    <input type="hidden" id="orderno" name="orderno" value=""/>
+    <input type="hidden" id="businessType" name="businessType" value="2"/>
+    <input type="hidden" id="type" name="type" value="0"/>
+    <input type="hidden" id="descript" name="descript" value=""/>
+</form>
 </body>
+<script src="../lib/js/zepto.min.js"></script>
+<script src="../lib/js/config.js"></script>
+<script src="./js/buikgas.js"></script>
 </html>

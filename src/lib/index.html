@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <title>Title</title>
+    <link rel="stylesheet" href="../common.css">
+    <script type="text/javascript" src="js/jsbridge.js"></script>
+    <script type="text/javascript" src="js/zepto.min.js"></script>
+    <script type="text/javascript" src="js/config.js"></script>
+    <script type="text/javascript">
+        //        jsapi.app.sys({
+        //            name:''
+        //        },function (res) {
+        //            new toast(JSON.stringify(res));
+        //        });
+        (function ($) {
+            var startX = 0;
+            var endX = 0;
+
+            $.fn.moveDel = function (callback) {
+                var _this = this;
+                var html = '<div class="moveDel">删除</div>';
+                _this.append(html);
+                moveStart(_this);
+                moveing(_this);
+                moveEnd(_this);
+            };
+
+            function moveStart(_this) {
+                _this.on('touchstart', function (e) {
+                    startX = event.touches[0].pageX;
+                });
+            }
+
+            function moveing(_this) {
+                _this.on('touchmove', function (e) {
+                    endX = event.touches[0].pageX;
+                });
+            }
+
+            function moveEnd(_this) {
+                _this.on('touchend', function (e) {
+                    console.log(endX - startX);
+                    var moveX = endX - startX;
+                    if (moveX < -50) {
+                        _this.find('.moveDel').css({'width':'50px'});
+                    } else if (moveX > 50) {
+                        _this.find('.moveDel').css({'width':'0px'});
+                    }
+                });
+            }
+
+        })(Zepto);
+
+        $(function () {
+            $('.item').moveDel(function () {
+
+            });
+
+        })
+    </script>
+</head>
+<body>
+<div id="main">
+    <div class="item-list-box">
+        <div class="item" style="background: #ff99a5;position: relative">
+            <div class="item-left">户口登记 预约号：0000001<span>地点：河阳派出所</span></div>
+            <div class="item-right"><span class=" item-right-icon"></span></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

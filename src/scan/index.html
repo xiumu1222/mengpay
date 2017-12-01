@@ -17,39 +17,53 @@
         <img src="./images/icon_h.png" alt="icon">
         <p>世纪联华超市</p>
     </div>
-    <div class="money">
-        <div class="moneytitle">付款金额</div>
-        <div class="moneyinputbox">￥<input type="text"></div>
-    </div>
-    <div class="paytype">
-        <div class="typetitle">支付方式</div>
-        <div class="item-list-box">
-            <div class="item">
-                <img class="item-img" src="./images/pay_zhi.png" alt="bill">
-                <div class="item-left">支付宝支付</div>
-                <div class="item-right"><img src="./images/icon_on.png" alt=""></div>
+    <form>
+        <div class="money">
+            <div class="moneytitle">付款金额</div>
+            <div class="moneyinputbox">￥<input type="tel" value="0" maxlength="10"></div>
+        </div>
+        <div class="paytype">
+            <div class="typetitle">支付方式</div>
+            <div class="item-list-box">
+                <label class="scan-radio on">
+                    <div class="item">
+                        <img class="item-img" src="./images/pay_zhi.png" alt="bill">
+                        <div class="item-left">支付宝支付</div>
+                        <div class="item-right radio"><input type="radio" name="type" checked>
+                        </div>
+                    </div>
+                </label>
+            </div>
+            <div class="item-list-box">
+                <label class="scan-radio">
+                    <div class="item">
+                        <img class="item-img" src="./images/pay_we.png" alt="bill">
+                        <div class="item-left">微信支付</div>
+                        <div class="item-right radio"><input type="radio" name="type">
+                        </div>
+                    </div>
+                </label>
+            </div>
+            <div class="item-list-box">
+                <label class="scan-radio">
+                    <div class="item">
+                        <img class="item-img" src="./images/pay_bank.png" alt="bill">
+                        <div class="item-left">银联支付</div>
+                        <div class="item-right radio"><input type="radio" name="type">
+                        </div>
+                    </div>
+                </label>
             </div>
         </div>
-        <div class="item-list-box">
-            <div class="item">
-                <img class="item-img" src="./images/pay_we.png" alt="bill">
-                <div class="item-left">微信支付</div>
-                <div class="item-right"><img src="./images/icon_un.png" alt=""></div>
-            </div>
-        </div>
-        <div class="item-list-box">
-            <div class="item">
-                <img class="item-img" src="./images/pay_bank.png" alt="bill">
-                <div class="item-left">银联支付</div>
-                <div class="item-right"><img src="./images/icon_un.png" alt=""></div>
-            </div>
-        </div>
-    </div>
+    </form>
+
 </div>
 <div class="submit-button-layout">
     <div class="submit-button-box">确认</div>
 </div>
 </body>
-<script src="../zepto.min.js"></script>
+<script src="../lib/js/zepto.min.js"></script>
+<script src="../lib/js/jsbridge.js"></script>
+<script src="../lib/js/config.js"></script>
 <script src="./js/index.js"></script>
 </html>

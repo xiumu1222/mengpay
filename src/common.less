@@ -1,0 +1,292 @@
+html {
+  font-size: 38px;
+  font-family: sans-serif-light, Roboto, STHeiTiSC, STHeiTi, Helvetica Neue, Helvetica, sans-serif;
+}
+
+@media only screen and (min-width: 320px) {
+  html {
+    font-size: 42.666px !important;
+  }
+}
+
+@media only screen and (min-width: 360px) {
+  html {
+    font-size: 48px !important;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  html {
+    font-size: 50px !important;
+  }
+}
+
+@media only screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px !important;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  html {
+    font-size: 64px !important;
+  }
+}
+
+@media only screen and (min-width: 560px) {
+  html {
+    font-size: 74.666px !important;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  html {
+    font-size: 85.333px !important;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  html {
+    font-size: 96px !important;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  html {
+    font-size: 100px !important;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  html {
+    font-size: 106.666px !important;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  html {
+    font-size: 128px !important;
+  }
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+th,
+td,
+p,
+blockquote,
+pre,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+hr {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-touch-callout: none; /*系统默认菜单被禁用*/
+  -webkit-user-select: none; /*webkit浏览器*/
+  -khtml-user-select: none; /*早期浏览器*/
+  -moz-user-select: none; /*火狐*/
+  -ms-user-select: none; /*IE10*/
+  user-select: none;
+}
+
+input {
+  outline: none;
+  /*color: #035ba0;*/
+  font-size: 0.34rem;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: auto; /*webkit浏览器*/
+}
+
+/*input::-moz-placeholder {*/
+/*color: #ffffff;*/
+/*}*/
+
+/*input::-webkit-input-placeholder {*/
+/*color: #ffffff;*/
+/*}*/
+
+/*input:-ms-input-placeholder {*/
+/*color: #ffffff;*/
+/*}*/
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  color: #151515;
+  background: #f5f5f9;
+  font-family: sans-serif-light, Roboto, STHeiTiSC, STHeiTi, Helvetica Neue, Helvetica, sans-serif;
+}
+
+li {
+  list-style: none
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+fieldset,
+img {
+  border: 0
+}
+
+a {
+  text-decoration: none;
+  out-line: none;
+  color: #000000;
+}
+
+a:active {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-user-select: none;
+  -moz-user-focus: none;
+  -moz-user-select: none;
+}
+
+.clear {
+  clear: both;
+}
+
+#app {
+  font-size: 0.24rem;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+input {
+  font-size: 0.3rem;
+  //color: #cacaca;
+}
+
+.submit-button-layout {
+  margin-top: 0.34rem;
+  .submit-button-box {
+    width: 6.95rem;
+    height: 0.88rem;
+    line-height: 0.88rem;
+    text-align: center;
+    font-size: 0.38rem;
+    border-radius: 0.08rem;
+    margin: 0 auto;
+    background: #FFA800;
+    color: #ffffff;
+    a {
+      color: #ffffff;
+    }
+  }
+}
+
+.toast {
+  background: #000000;
+  width: 3rem;
+  padding: 0.3rem 0;
+  text-align: center;
+  font-size: 0.28rem;
+  border-radius: 0.2rem;
+  color: #ffffff;
+  position: fixed;
+  left: 2.15rem;
+  top: 3rem;
+  opacity: 1;
+  transition: opacity 5s;
+  &.on {
+    opacity: 0;
+  }
+}
+
+.pop-box {
+  font-size: 0.28rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  .pop {
+    width: 5.3rem;
+    border-radius: 0.2rem;
+    background: #ffffff;
+    margin: 0 auto;
+    z-index: 1;
+    margin-top: 3rem;
+    .title {
+      text-align: center;
+      font-size: 0.36rem;
+      padding-top: 0.35rem;
+      font-weight: 600;
+      color: #151515;
+    }
+    .content {
+      text-align: center;
+      border-bottom: solid 1px #dedede;
+      padding: 0.15rem 0.4rem 0.3rem 0.4rem;
+      font-weight: 600;
+    }
+    .btn-box {
+      display: flex;
+      div {
+        width: 50%;
+        box-sizing: border-box;
+        text-align: center;
+        height: 0.9rem;
+        line-height: 0.9rem;
+        font-size: 0.34rem;
+        &:nth-child(1) {
+          color: #999999;
+          border-right: solid 1px #dedede;
+        }
+        &:nth-child(2) {
+          color: #FFA800;
+        }
+      }
+    }
+
+  }
+  .pop-back {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+}
+
+.moveDel {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #ff3b2f;
+  color: #ffffff;
+  font-size: 0.3rem;
+  height: 100%;
+  width: 0px;
+  text-align: center;
+  transition: width 1s;
+  word-break: keep-all;
+}

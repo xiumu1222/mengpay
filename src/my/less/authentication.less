@@ -67,6 +67,46 @@
     text-align: right;
     padding:0 0.28rem;
     font-size: 0.3rem;
-    color: #cacaca;
   }
+}
+
+.single-select-layout {
+  .single-select-box {
+    font-size: 0.3rem;
+    position: relative;
+
+    .selected-name {
+    }
+    .select-list {
+      position: absolute;
+      background: #ffffff;
+      border: solid 1px #dedede;
+      z-index: 10;
+      min-width: 3rem;
+      top: 0.6rem;
+      &.show {
+        display: block;
+      }
+      &.right {
+        right: 0;
+        .select-item {
+          text-align: right;
+        }
+      }
+      .select-item {
+        padding: 13px;
+        &.on {
+          background: #f1f1f1;
+        }
+      }
+    }
+  }
+}
+.mask{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index: 99;
 }

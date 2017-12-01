@@ -8,29 +8,31 @@
     background: #ffa800;
     padding: 0.16rem 0;
     text-align: center;
+    line-height:0.56rem;
+    display: flex;
+    align-items: center;
+    padding-left: 0.4rem;
     .search-input {
       height: 0.56rem;
       width: 5.84rem;
-      display: inline-block;
+      display: block;
       background: #ffdc99;
       border-style: none;
-      border-radius: 0.05rem;
+      border-radius: 0.08rem;
       margin-right: 0.42rem;
       background-image: url("../images/icon_search.png");
       background-repeat: no-repeat;
       background-position: 0.17rem center;
       background-size: 0.4rem;
       padding-left: 0.7rem;
-      font-size: 0.3rem;
+      font-size: 0.28rem;
+      color: #ffffff;
     }
     .scan {
       background: url("../images/icon_scan.png") no-repeat;
       background-size: contain;
       width: 0.44rem;
       height: 0.44rem;
-      display: inline-block;
-      position: relative;
-      top: 0.1rem
     }
   }
 }
@@ -39,6 +41,7 @@
   .app-list-box {
     font-size: 0;
     background: #ffffff;
+    padding: 0 0.2rem;
     .app-item {
       text-align: center;
       font-size: 0.24rem;
@@ -46,6 +49,7 @@
       width: 25%;
       padding: 0.34rem 0;
       .app-img {
+        font-size: 0;
         img {
           width: 0.58rem;
           height: 0.58rem;
@@ -90,7 +94,7 @@
   .title-bar-box {
     background: #ffffff;
     padding: 0.26rem 0.4rem;
-    font-size: 0.24rem;
+    font-size: 0.26rem;
     border-bottom: solid 1px #f2f2f2;
     &:after {
       content: '';
@@ -126,7 +130,7 @@
         vertical-align: top;
         padding: 0.2rem 0 0.2rem 0.2rem;
         .content-title {
-          font-size: 0.3rem;
+          font-size: 0.32rem;
           color: #151515;
           margin-bottom: 0.2rem;
         }

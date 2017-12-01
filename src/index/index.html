@@ -8,81 +8,69 @@
     <meta content="black" name="apple-mobile-web-app-status-bar-style">
     <meta content="telephone=no" name="format-detection">
     <title>mengpay</title>
+    <script src="../lib/js/jsbridge.js" type="text/javascript"></script>
     <link rel="stylesheet" href="../common.css">
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-    <div id="main" class="main">
-        <div id="search-title" class="search-title-layout">
-            <div class="search-title-box">
-                <input class="search-input" />
-                <div class="scan" onclick=callAndroidLink("/dist/scan/index.html")></div>
+<div id="main" class="main">
+    <div id="search-title" class="search-title-layout">
+        <div class="search-title-box">
+            <div>
+                <input class="search-input"/>
             </div>
+            <div class="scan" onclick="callscan()"></div>
         </div>
-        <div id="app-list" class="app-list-layout" >
-            <div class="app-list-box">
+    </div>
+    <div id="app-list" class="app-list-layout">
+        <div class="app-list-box">
 
+        </div>
+    </div>
+    <div id="content-bar" class="content-bar-layout">
+        <div class="content-bar-box">
+            <div class="content-icon">
+                <img src="./images/icon_credit.png">
+            </div>
+            <div class="content-desc"><span
+                    style="position:relative ;top:-0.07rem;margin-right:0.14rem;line-height:0.08rem;display: inline-block;width: 0.08rem;height:0.08rem;border-radius: 0.08rem;background-color: #b5b5b5"></span>个人征信查询
             </div>
         </div>
-        <div id="content-bar" class="content-bar-layout">
-            <div class="content-bar-box">
-                <div class="content-icon">
-                    <img src="./images/icon_credit.png">
-                </div>
-                <div class="content-desc">·个人征信查询</div>
-            </div>
+    </div>
+    <div id="title-bar" class="title-bar-layout">
+        <div class="title-bar-box">
+            孟州本地生活
         </div>
-        <div id="title-bar" class="title-bar-layout">
-            <div class="title-bar-box">
-                孟州本地生活
-            </div>
-        </div>
-        <div id="advert-list" class="advert-list-layout">
-            <div class="advert-list-box">
-                <div class="advert-item">
-                    <div class="advert-img">
-                        <img src="./images/img_01.png">
-                    </div>
-                    <div class="advert-content">
-                        <div class="content-title">推荐：雪地靴</div>
-                        <div class="content-desc">推荐理由：孟州雪地靴制作拥有完整、科
-                            学的质量管理体系…
-                        </div>
-                    </div>
+    </div>
+    <div id="advert-list" class="advert-list-layout">
+        <div class="advert-list-box">
+            <div class="advert-item">
+                <div class="advert-img">
+                    <img src="./images/img_01.png">
                 </div>
-                <div class="advert-item">
-                    <div class="advert-img">
-                        <img src="./images/img_01.png">
-                    </div>
-                    <div class="advert-content">
-                        <div class="content-title">推荐：雪地靴</div>
-                        <div class="content-desc">推荐理由：孟州雪地靴制作拥有完整、科
-                            学的质量管理体系…
-                        </div>
-                    </div>
-                </div>
-                <div class="advert-item">
-                    <div class="advert-img">
-                        <img src="./images/img_01.png">
-                    </div>
-                    <div class="advert-content">
-                        <div class="content-title">推荐：雪地靴</div>
-                        <div class="content-desc">推荐理由：孟州雪地靴制作拥有完整、科
-                            学的质量管理体系…
-                        </div>
+                <div class="advert-content">
+                    <div class="content-title">推荐：雪地靴</div>
+                    <div class="content-desc">推荐理由：孟州雪地靴制作拥有完整、科
+                        学的质量管理体系…
                     </div>
                 </div>
             </div>
         </div>
     </div>
-<div id="toolnav" class="toolnav-layout">
+</div>
+<div id="toolnav" class="toolnav-layout" style="display: none">
     <ul class="toolnav-box">
-        <li class="toolnav-item"><span class="item-link"><img src="./images/tab_home_touch.png" alt="home"><span class="active">首页</span></span></li>
-        <li class="toolnav-item"><span class="item-link"><img src="./images/tab_local.png" alt="home"><span>本地</span></span></li>
-        <li class="toolnav-item"><a href="/dist/my/index.html" class="item-link"><img src="./images/tab_m.png" alt="home"><span>个人</span></a></li>
+        <li class="toolnav-item"><span class="item-link"><img src="./images/tab_home_touch.png" alt="home"><span
+                class="active">首页</span></span></li>
+        <li class="toolnav-item"><span class="item-link"><img src="./images/tab_local.png"
+                                                              alt="home"><span>本地</span></span></li>
+        <li class="toolnav-item"><a href="/my/index.html?debugger=1" class="item-link"><img src="./images/tab_m.png"
+                                                                                            alt="home"><span>个人</span></a>
+        </li>
     </ul>
 </div>
 </body>
-<script src="../zepto.min.js"></script>
+<script src="../lib/js/zepto.min.js"></script>
+<script src="../lib/js/config.js"></script>
 <script src="./js/index.js"></script>
 </html>

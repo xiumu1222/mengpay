@@ -7,63 +7,92 @@
     <meta content="yes" name="apple-mobile-web-app-capable">
     <meta content="black" name="apple-mobile-web-app-status-bar-style">
     <meta content="telephone=no" name="format-detection">
-    <title>mengpay</title>
+    <title>缴费</title>
     <link rel="stylesheet" href="../common.css">
     <link rel="stylesheet" href="./css/paydetail.css">
 </head>
 <body>
-    <div id="main">
-        <div class="pay-query-layout">
-            <div class="pay-query-box">
-                <div class="pay-query-title">孟州幼儿园</div>
-                <div class="item-list-box">
-                    <div class="item">
-                        <div class="item-left">缴费金额</div>
-                        <div class="item-right">450</div>
-                    </div>
+<div id="main">
+    <div class="pay-query-layout">
+        <div class="pay-query-box">
+            <div class="pay-query-title" id="name">孟州幼儿园</div>
+            <div class="item-list-box">
+                <div class="item">
+                    <div class="item-left">缴费金额</div>
+                    <div class="item-right" id="fee">0</div>
                 </div>
-                <div class="item-list-box">
-                    <div class="item">
-                        <div class="item-left">缴费类型</div>
-                        <div class="item-right">
-                            保育费
-                        </div>
-                    </div>
-                </div>
-                <div class="item-list-box">
-                    <div class="item">
-                        <div class="item-left">缴纳月份</div>
-                        <div class="item-right">
-                            2017-10
-                        </div>
-                    </div>
-                </div>
-                <div class="item-list-box">
-                    <div class="item">
-                        <div class="item-left">学号</div>
-                        <div class="item-right">
-                            2100021
-                        </div>
+            </div>
+            <div class="item-list-box">
+                <div class="item">
+                    <div class="item-left">缴费类型</div>
+                    <div class="item-right" id="ftype">
+                        保育费
                     </div>
                 </div>
             </div>
-            <div class="protocol-layout">
-                <div class="protocol-box">
-                    <div class="agree-radio on"></div>
-                    <div>
-                        同意
-                    </div>
-                    <div class="agree-link">
-                        《孟之付自助缴费服务协议》
+            <div class="item-list-box">
+                <div class="item">
+                    <div class="item-left">缴纳月份</div>
+                    <div class="item-right" id="time">
+                        2017-10
                     </div>
                 </div>
             </div>
-            <div class="submit-button-layout">
-                <div class="submit-button-box" onclick="alert('缴费成功,我该去哪')">确认缴费</div>
+            <div class="item-list-box">
+                <div class="item">
+                    <div class="item-left">学号</div>
+                    <div class="item-right" id="sid">
+                        2100021
+                    </div>
+                </div>
+            </div>
+            <div class="item-list-box">
+                <div class="item">
+                    <div class="item-left">班级</div>
+                    <div class="item-right" id="cname">
+                    </div>
+                </div>
+            </div>
+            <div class="item-list-box">
+                <div class="item">
+                    <div class="item-left">姓名</div>
+                    <div class="item-right" id="sname">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="protocol-layout">
+            <div class="protocol-box">
+                <div class="agree-radio on"></div>
+                <div>
+                    同意
+                </div>
+                <div class="agree-link">
+                    《孟之付自助缴费服务协议》
+                </div>
             </div>
         </div>
+        <div class="submit-button-layout">
+            <a href="#" onclick="pay()">
+                <div class="submit-button-box">确认缴费</div>
+            </a>
+        </div>
     </div>
+</div>
+    <form action="" method="post" id="form1" name="form1">
+    <input type="hidden" id="subject" name="subject" value=""/>
+    <input type="hidden" id="totalAmount" name="totalAmount" value=""/>
+    <input type="hidden" id="orderno" name="orderno" value=""/>
+    <input type="hidden" id="businessType" name="businessType" value="1"/>
+    <input type="hidden" id="type" name="type" value="0"/>
+    <input type="hidden" id="descript" name="descript" value=""/>
+    
+    </form>
 </body>
-<script src="../zepto.min.js"></script>
-<script src="./js/index.js"></script>
+
+<script src="../lib/js/zepto.min.js"></script>
+<script src="../lib/js/config.js"></script>
+<script src="./js/paydetail.js"></script>
 </html>

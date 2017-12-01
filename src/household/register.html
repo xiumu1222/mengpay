@@ -7,7 +7,7 @@
     <meta content="yes" name="apple-mobile-web-app-capable">
     <meta content="black" name="apple-mobile-web-app-status-bar-style">
     <meta content="telephone=no" name="format-detection">
-    <title>实名快递</title>
+    <title>户籍预约</title>
     <link rel="stylesheet" href="../common.css">
     <link rel="stylesheet" href="./css/register.css">
 </head>
@@ -15,51 +15,52 @@
     <div id="main">
         <div class="express-title">
         	<div class="title-left">预约信息</div>
-            <div class="title-right"><a href="/dist/household/history.html">预约历史</a></div>
+            <div class="title-right"><a href="./history.html">预约历史</a></div>
         </div>
         <div class="item-list-box">
             <div class="item">
-                <div class="item-left">预约地点</div>
-                <div class="item-right">请选择<span class=" item-right-icon"></span></div>
-            </div>
-            <div class="item">
-                <div class="item-left">预约时间</div>
-                <div class="item-right">请选择<span class=" item-right-icon"></span></div>
-            </div>
-            <div class="item">
                 <div class="item-left">预约业务</div>
-                <div class="item-right">请选择<span class=" item-right-icon"></span></div>
+                <div class="item-right yuyueyewu">请选择<span class=" item-right-icon"></span></div>
             </div>
             <div class="item">
                 <div class="item-left">申请理由</div>
-                <div class="item-right">请选择<span class=" item-right-icon"></span></div>
+                <div class="item-right shenqingliyou">请选择<span class=" item-right-icon"></span></div>
+            </div>
+            <div class="item">
+                <div class="item-left">预约地点</div>
+                <div class="item-right yuyuedidian">请选择<span class=" item-right-icon"></span></div>
+            </div>
+            <div class="item">
+                <div class="item-left">预约时间</div>
+                <div class="item-right yuyueshijian">请选择<span class=" item-right-icon"></span></div>
             </div>
     	</div>
         <div class="express-title">个人信息</div>
         <div class="item-list-box">
             <div class="item">
                 <div class="item-left">姓名</div>
-                <div class="item-right"><input class="item-input" type="text" placeholder="请输入姓名"></div>
+                <div class="item-right"><input class="item-input name" id="yourname" type="text" placeholder="请输入姓名"></div>
             </div>
             <div class="item">
                 <div class="item-left">身份证号码</div>
-                <div class="item-right"><input class="item-input" type="text" placeholder="请输入身份证号码"></div>
+                <div class="item-right"><input class="item-input idcard" type="text" placeholder="请输入身份证号码"></div>
             </div>
             <div class="item">
                 <div class="item-left">手机号</div>
-                <div class="item-right"><input class="item-input" type="text" placeholder="请输入手机号码"></div>
+                <div class="item-right"><input class="item-input mobile" type="tel" maxlength="11" placeholder="请输入手机号码"></div>
             </div>
             <div class="item">
                 <div class="item-left">验证码</div>
-                <div class="item-right"><input class="item-input" type="text" placeholder="请输入验证码"></div>
+                <div class="item-right inputlayout"><input class="item-input code" type="text" placeholder="请输入验证码"><span class="checkcode">获取验证码</span></div>
             </div>
-            <div class="remark">所填信息必须真实有效，并且与到受理点取号办理业务时出示的证件信息一致，否则受理点将不予受理。</div>
+
     	</div>
+        <div class="remark">所填信息必须真实有效，并且与到受理点取号办理业务时出示的证件信息一致，否则受理点将不予受理。</div>
     </div>
     <div class="submit-button-layout">
-        <a href="/dist/household/detail.html">
-            <div class="submit-button-box">确认预约</div>
-        </a>
+        <div class="submit-button-box">确认预约</div>
 	</div>
 </body>
+<script src="../lib/js/zepto.min.js"></script> <script src="../lib/js/config.js"></script>
+<script src="./js/register.js"></script>
 </html>

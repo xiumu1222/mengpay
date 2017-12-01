@@ -7,7 +7,7 @@
     <meta content="yes" name="apple-mobile-web-app-capable">
     <meta content="black" name="apple-mobile-web-app-status-bar-style">
     <meta content="telephone=no" name="format-detection">
-    <title>mengpay</title>
+    <title>违章查询</title>
     <link rel="stylesheet" href="../common.css">
     <link rel="stylesheet" href="./css/PeccancyQuery.css">
 </head>
@@ -21,7 +21,7 @@
                     <div class=" choosecartype item-right">
                         <div class="single-select-layout">
                             <div class="single-select-box">
-                                <div class="selected-name"><span class="name">请选择</span><span class=" item-right-icon" style="padding-top: 0.08rem;"></span></div>
+                                <div class="selected-name clxx"><span class="name">请选择</span><span class=" item-right-icon" style="padding-top: 0.08rem;"></span></div>
                                 <div class="select-list" style=" right:0;z-index:100;display: none" >
 
                                 </div>
@@ -32,17 +32,17 @@
             </div>
             <div class="item-list-box">
                 <div class="item">
-                    <div class="item-left">车牌种类</div>
+                    <div class="item-left" style="white-space: nowrap;">车牌种类</div>
                     <div class="licenceplate item-right">
                         <div class="single-select-layout">
                             <div class="single-select-box">
-                                <div class="selected-name"><span class="name">请选择</span><span class=" item-right-icon" style="padding-top: 0.04rem;"></span></div>
+                                <div class="selected-name cpzl"><span style="white-space: nowrap;" class="name">请选择</span><span class=" item-right-icon" style="padding-top: 0.04rem;"></span></div>
                                 <div class="select-list" style=" left:0;z-index:100;display: none" >
 
                                 </div>
                             </div>
                         </div>
-                        <input class="item-input" v-model="carcodeVal" type="text" placeholder="车牌号" maxlength="5">
+                        <input class="item-input carcodeVal" type="text" placeholder="车牌号" maxlength="5">
                     </div>
                 </div>
             </div>
@@ -50,20 +50,18 @@
                 <div class="item">
                     <div class="item-left">车身架号</div>
                     <div class="item-right">
-                        <input class="item-input" v-model="caridVal" type="text" placeholder="车辆识别代码后六位"
+                        <input class="item-input caridVal" type="text" placeholder="车辆识别代码后六位"
                                maxlength="6">
                     </div>
                 </div>
             </div>
         </div>
         <div class="submit-button-layout">
-            <a href="/dist/peccancypay/index.html">
-                <div class="submit-button-box">查询</div>
-            </a>
+            <div class="submit-button-box">查询</div>
         </div>
     </div>
 </div>
 </body>
-<script src="../zepto.min.js"></script>
+<script src="../lib/js/zepto.min.js"></script> <script src="../lib/js/config.js"></script>
 <script src="./js/PeccancyQuery.js"></script>
 </html>

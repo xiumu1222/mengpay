@@ -13,29 +13,34 @@
 </head>
 <body>
     <div id="main">
-        <div class="express-title">申通快递</div>
+        <div class="item-list-box">
+            <div class="item">
+                <div class="item-left">快递公司</div>
+                <div class="item-right comp"><span>请选择</span><span id="name" class="item-right-icon"></span></div>
+            </div>
+        </div>
         <div class="item-list-box">
             <div class="item">
                 <div class="item-left">单号</div>
-                <div class="item-right"><input class="item-input" type="text" placeholder="请输入单号"></div>
+                <div class="item-right"><input class="item-input" id="nummber" type="text" placeholder="请输入单号"></div>
             </div>
     	</div>
         <div class="item-list-box">
             <div class="item">
                 <div class="item-left">姓名</div>
-                <div class="item-right"><input class="item-input" type="text" placeholder="请输入姓名"></div>
+                <div class="item-right"><input class="item-input" id="yourname" type="text" maxlength="4" placeholder="请输入姓名"></div>
             </div>
     	</div>
         <div class="item-list-box">
             <div class="item">
                 <div class="item-left">身份证号码</div>
-                <div class="item-right"><input class="item-input" type="text" placeholder="请输入身份证号码"></div>
+                <div class="item-right"><input class="item-input" id="card_no" type="text" maxlength="18" placeholder="请输入身份证号码"></div>
             </div>
     	</div>
         <div class="item-list-box">
             <div class="item">
                 <div class="item-left">金额</div>
-                <div class="item-right"><input class="item-input" type="text" placeholder="请输入金额"></div>
+                <div class="item-right"><input class="item-input" id="money" type="tel" placeholder="请输入金额"></div>
             </div>
     	</div>
     </div>
@@ -51,7 +56,10 @@
         </div>
     </div>
     <div class="submit-button-layout">
-    	<div class="submit-button-box" onclick="alert('支付成功,我该去哪')">去支付</div>
+    	<div class="submit-button-box">去支付</div>
 	</div>
 </body>
+<script src="../lib/js/zepto.min.js"></script>
+<script src="../lib/js/config.js"></script>
+<script src="js/express.js"></script>
 </html>

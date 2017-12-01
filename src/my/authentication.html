@@ -16,13 +16,15 @@
     <div class="item-list-box">
         <div class="item">
             <div class="item-left">姓名</div>
-            <div class="item-right inputlayout"><input type="text" placeholder="请输入姓名"></div>
+            <div class="item-right inputlayout"><input type="text" class="name" placeholder="请输入姓名"></div>
         </div>
     </div>
     <div class="item-list-box marginbottom20">
         <div class="item">
             <div class="item-left">性别</div>
-            <div class="item-right">男<span class=" item-right-icon"></span></div>
+            <div class="item-right sexbox">
+
+            </div>
         </div>
     </div>
     <div class="item-list-box ">
@@ -34,24 +36,29 @@
     <div class="item-list-box marginbottom20">
         <div class="item">
             <div class="item-left">证件号码</div>
-            <div class="item-right inputlayout"><input type="text" placeholder="请输入证件号码"></div>
+            <div class="item-right inputlayout"><input type="text" class="personid" placeholder="请输入证件号码"></div>
         </div>
     </div>
     <div class="item-list-box ">
         <div class="item">
             <div class="item-left">所在地区</div>
-            <div class="item-right"><span class=" item-right-icon"></span></div>
+            <div class="item-right "><span class="location">浙江省 杭州市 滨江区</span><span class=" item-right-icon "></span></div>
         </div>
     </div>
     <div class="item-list-box">
         <div class="item">
             <div class="item-left">详细地址</div>
-            <div class="item-right inputlayout"><input type="text" placeholder="请输入详细地址"></div>
+            <div class="item-right inputlayout "><input type="text" class="Address" placeholder="请输入详细地址"></div>
         </div>
     </div>
 
 </div>
+<div class="submit-button-layout">
+    <div class="submit-button-box">确认</div>
+</div>
 </body>
-<script src="../zepto.min.js"></script>
-<script src="./js/index.js"></script>
+<script src="../lib/js/zepto.min.js"></script>
+<script src="../lib/js/jsbridge.js"></script>
+<script src="../lib/js/config.js"></script>
+<script src="./js/authentication.js"></script>
 </html>

@@ -10,56 +10,61 @@
     <title>设置</title>
     <link rel="stylesheet" href="../common.css">
     <link rel="stylesheet" href="./css/setting.css">
+    <script src="../lib/js/jsbridge.js" type="text/javascript"></script>
 </head>
 <body>
 <div id="main">
     <div class="item-list-box">
-        <a href="/dist/my/changeuser.html">
+        <!--<a href="./changeuser.html">-->
         <div class="item">
-            <div class="item-left">账号切换</div>
-            <div class="item-right">182********<span class=" item-right-icon"></span></div>
+            <div class="item-left">当前账号</div>
+            <div class="item-right"><span class="user"></span>
+            </div>
         </div>
-        </a>
+        <!--</a>-->
     </div>
     <div class="item-list-box">
-        <a  href="/dist/my/setpwd.html">
+        <a href="./setpwd.html">
             <div class="item">
                 <div class="item-left">密码设置</div>
                 <div class="item-right"><span class=" item-right-icon"></span></div>
             </div>
         </a>
     </div>
-    <div class="item-list-box" >
-        <a href="/dist/my/sjh.html">
+    <div class="item-list-box">
+        <a href="./sjh.html">
             <div class="item">
                 <div class="item-left">手机号</div>
-                <div class="item-right">182********<span class=" item-right-icon"></span></div>
+                <div class="item-right"><span class="mobile"></span><span class=" item-right-icon"></span></div>
             </div>
         </a>
     </div>
     <div class="item-list-box">
-        <div class="item">
+        <div class="item qq-item">
             <div class="item-left">QQ</div>
-            <div class="item-right bind">已绑定<span class=" item-right-icon"></span></div>
+            <div class="item-right qq unbind"><span class="value"></span>未绑定<span class=" item-right-icon"></span></div>
         </div>
     </div>
     <div class="item-list-box">
-        <div class="item">
+        <div class="item webchat-item">
             <div class="item-left">微信</div>
-            <div class="item-right unbind">未绑定<span class=" item-right-icon"></span></div>
+            <div class="item-right webchat unbind"><span class="value"></span>未绑定<span class=" item-right-icon"></span></div>
         </div>
     </div>
     <div class="item-list-box">
-        <div class="item">
+        <div class="item weibo-item">
             <div class="item-left">微博</div>
-            <div class="item-right unbind">未绑定<span class=" item-right-icon"></span></div>
+            <div class="item-right weibo unbind"><span class="value"></span>未绑定<span class=" item-right-icon"></span></div>
         </div>
     </div>
 </div>
 <div class="submit-button-layout">
-    <div class="submit-button-box">确认</div>
+    <div class="submit-button-box" id="logout">退出登录</div>
 </div>
+
 </body>
-<script src="../zepto.min.js"></script>
-<script src="./js/index.js"></script>
+<script src="../lib/js/zepto.min.js"></script>
+<script src="../lib/js/jsbridge.js"></script>
+<script src="../lib/js/config.js"></script>
+<script src="./js/setting.js"></script>
 </html>

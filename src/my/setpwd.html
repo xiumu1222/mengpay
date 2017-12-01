@@ -7,7 +7,7 @@
     <meta content="yes" name="apple-mobile-web-app-capable">
     <meta content="black" name="apple-mobile-web-app-status-bar-style">
     <meta content="telephone=no" name="format-detection">
-    <title>账户切换</title>
+    <title>修改密码</title>
     <link rel="stylesheet" href="../common.css">
     <link rel="stylesheet" href="./css/setpwd.css">
 </head>
@@ -16,17 +16,17 @@
 <div id="main" class="main">
     <div class="item-list-box">
         <div class="item">
-            <input type="text" placeholder="请输入原始密码">
+            <input type="password" class="oldpwd" placeholder="请输入原始密码">
         </div>
     </div>
     <div class="item-list-box">
         <div class="item">
-            <input type="text" placeholder="请输入新密码">
+            <input type="password" class="newpwd" placeholder="请输入新密码">
         </div>
     </div>
     <div class="item-list-box">
         <div class="item">
-            <input type="text" placeholder="请确认新密码">
+            <input type="password" class="checkpwd" placeholder="请确认新密码">
         </div>
     </div>
 </div>
@@ -34,6 +34,8 @@
     <div class="submit-button-box">确认</div>
 </div>
 </body>
-<script src="../zepto.min.js"></script>
-<script src="./js/index.js"></script>
+<script src="../lib/js/zepto.min.js"></script>
+<script src="../lib/js/jsbridge.js"></script>
+<script src="../lib/js/config.js"></script>
+<script src="./js/setpwd.js"></script>
 </html>

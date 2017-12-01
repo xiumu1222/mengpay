@@ -266,9 +266,13 @@
         /**
          * native层方法调用
          * */
-        sys: function (param, callback) {
+        startscan: function (param, callback) {
             //调用一个测试函数
-            JSBridge.callHandler('sys', param, function (res) {
+            JSBridge.callHandler('startscan', {
+                a:'',
+                b:'',
+                c:''
+            }, function (res) {
                 callback && callback(res);
             });
         },
@@ -280,13 +284,13 @@
             JSBridge.callHandler('callH5Func', {
                 "handleName": handleName
             }, function (res) {
-                alert(JSON.stringify(res));
+                new toast(JSON.stringify(res));
                 //callback && callback(res);
             });
         },
     };
     //注册一个测试函数
     // JSBridge.registerHandler('testH5Func', function(data) {
-    //   alert('测试函数接收到数据:' + JSON.stringify(data));
+    //   new toast('测试函数接收到数据:' + JSON.stringify(data));
     // });
 })();

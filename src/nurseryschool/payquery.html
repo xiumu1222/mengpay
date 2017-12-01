@@ -7,7 +7,7 @@
     <meta content="yes" name="apple-mobile-web-app-capable">
     <meta content="black" name="apple-mobile-web-app-status-bar-style">
     <meta content="telephone=no" name="format-detection">
-    <title>mengpay</title>
+    <title>缴费单查询</title>
     <link rel="stylesheet" href="../common.css">
     <link rel="stylesheet" href="./css/payquery.css">
 </head>
@@ -15,19 +15,19 @@
 <div id="main">
     <div class="pay-query-layout">
         <div class="pay-query-box" style="margin-bottom: 0.2rem">
-            <div class="pay-query-title">孟州幼儿园</div>
+            <div class="pay-query-title" id="name">孟州幼儿园</div>
             <div class="item-list-box">
                 <div class="item">
                     <div class="item-left">学号</div>
                     <div class="item-right">
-                        <input class="item-input" type="text" placeholder="请输入学号">
+                        <input class="item-input" id="sid" type="text" placeholder="请输入学号">
                     </div>
                 </div>
             </div>
             <div class="item-list-box">
                 <div class="item">
                     <div class="item-left">缴费类型</div>
-                    <div class="item-right">
+                    <div class="item-right" id="type">
                         保育费
                         <span class=" item-right-icon"></span>
                     </div>
@@ -36,7 +36,7 @@
             <div class="item-list-box">
                 <div class="item">
                     <div class="item-left">缴纳月份</div>
-                    <div class="item-right">
+                    <div class="item-right" id="time">
                         2017-10
                         <span class=" item-right-icon"></span>
                     </div>
@@ -44,13 +44,12 @@
             </div>
         </div>
         <div class="submit-button-layout">
-            <a href="/dist/nurseryschool/paydetail.html">
                 <div class="submit-button-box">缴费</div>
-            </a>
         </div>
     </div>
 </div>
 </body>
-<script src="../zepto.min.js"></script>
-<script src="./js/index.js"></script>
+<script src="../lib/js/zepto.min.js"></script>
+<script src="../lib/js/config.js"></script>
+<script src="./js/payquery.js"></script>
 </html>
